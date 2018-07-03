@@ -6,8 +6,8 @@ class App extends Component {
     state = {
         persons: [
             { id: '1asdf', name: 'Michael', age: 32 },
-            { id: '2asdf', name: 'Joy', age: 31 },
-            { id: '3asdf', name: 'Anna', age: 30 }
+            { id: '2asdf', name: 'Blarby', age: 31 },
+            { id: '3asdf', name: 'Paxton', age: 30 }
         ],
         otherState: 'some other value',
         showPersons: false
@@ -44,7 +44,8 @@ class App extends Component {
 
     render() {
         const style = {
-            backgroundColor: 'white',
+            backgroundColor: 'green',
+            color: 'white',
             font: 'inherit',
             border: '1px solid blue',
             padding: '8px',
@@ -66,6 +67,8 @@ class App extends Component {
                     })}
                 </div>
             );
+
+            style.backgroundColor = 'red';
         }
 
         return (
