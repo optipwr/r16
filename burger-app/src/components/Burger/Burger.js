@@ -18,7 +18,7 @@ const burger = (props) => {
     if (transformedIngredients.length === 0) {
         transformedIngredients = <p>Please start adding ingredients!</p>
     }
-    console.log(transformedIngredients); //the reduce turns the array of 4 arrays into a single array
+    // console.log(transformedIngredients); //the reduce turns the array of 4 arrays into a single array
     // so that if it is completely empty, we can trigger a message to the user
 
     return (
